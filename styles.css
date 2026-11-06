@@ -217,3 +217,21 @@ body{background:#fff}
 .gallery-grid img{width:100%;height:220px;display:block;object-fit:cover}
 @media(max-width:800px){.director-portrait{width:125px;flex-basis:125px}}
 @media(max-width:520px){.director-portrait{width:105px;flex-basis:105px}}
+
+/* Layout refinements requested after reviewing the uploaded photos */
+.why-decatur-section .section-heading{justify-content:flex-start}
+.why-decatur-section .section-heading>p{display:none}
+.student-carousel{grid-auto-columns:minmax(320px,46%);gap:22px;padding:0 0 12px}
+.student-slot{border:0;padding:0;background:transparent;scroll-snap-align:start}
+.student-slot-image{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;border:0;background:transparent}
+.student-slot strong,.student-slot span{display:none}
+.student-photo{min-height:450px;position:relative;overflow:hidden;background:#e8edf2}
+.core-site-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.student-photo:before,.student-photo:after{display:none}
+.student-photo-overlay{left:0;right:0;bottom:0;padding:22px 27px;background:linear-gradient(transparent,rgba(15,35,55,.78));color:#fff}
+.student-photo-overlay strong{font-family:var(--serif);font-size:2rem}
+.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.gallery-grid img{height:auto;aspect-ratio:4/3;object-fit:contain;background:#f4f6f8}
+.contact-section .button-light,.contact-section .contact-warning{display:none}
+@media(max-width:800px){.student-carousel{grid-auto-columns:minmax(270px,85%)}.gallery-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.gallery-grid{grid-template-columns:1fr}.student-photo{min-height:320px}}
