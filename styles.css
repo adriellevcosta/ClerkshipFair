@@ -210,3 +210,10 @@ body{background:#fff}
 .carousel-btn:hover{background:var(--ink);color:white}
 @media(max-width:800px){.clinical-facts-grid{grid-template-columns:1fr}.leadership-card{align-items:flex-start}.director-portrait-slot{width:125px;flex-basis:125px}.electives-panel{display:block}.electives-panel ul{margin-top:18px}.student-carousel-heading{align-items:flex-start;flex-direction:column}.student-carousel{grid-auto-columns:minmax(230px,80%)}}
 @media(max-width:520px){.director-portrait-slot{width:105px;flex-basis:105px;font-size:.58rem}.electives-panel{padding:22px}.electives-panel ul{grid-template-columns:1fr}.why-decatur-story{padding:22px}}
+
+/* Real photos supplied in the repository */
+.director-portrait{display:block;width:190px;aspect-ratio:3/4;flex:0 0 190px;object-fit:cover;object-position:center 30%;border:1px solid var(--line)}
+.student-slot-image{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center;border:0;background:#f1f4f7}
+.gallery-grid img{width:100%;height:220px;display:block;object-fit:cover}
+@media(max-width:800px){.director-portrait{width:125px;flex-basis:125px}}
+@media(max-width:520px){.director-portrait{width:105px;flex-basis:105px}}
