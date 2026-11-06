@@ -76,3 +76,13 @@ if ('IntersectionObserver' in window) {
   sections.forEach(section => observer.observe(section));
 }
 document.querySelector('#year').textContent = new Date().getFullYear();
+
+/* Horizontal student photo carousel controls */
+const studentTrack = document.querySelector('.student-carousel');
+document.querySelectorAll('.carousel-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    if (!studentTrack) return;
+    const direction = button.dataset.scroll === 'right' ? 1 : -1;
+    studentTrack.scrollBy({left: direction * Math.max(260, studentTrack.clientWidth * 0.8), behavior: 'smooth'});
+  });
+});
